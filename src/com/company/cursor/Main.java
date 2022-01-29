@@ -19,14 +19,13 @@ public class Main {
         CarBuilder carBuilder = new CarBuilder();
         ManualBuilder manualBuilder = new ManualBuilder();
 
-        Car sportCar = new Car();
-        Manual sportCarManual = new Manual();
+
 
         director.constructSportCar(carBuilder);
         director.constructSportCar(manualBuilder);
 
-        sportCar = carBuilder.getResult();
-        sportCarManual = manualBuilder.getResult();
+        Car sportCar = carBuilder.getResult();
+        Manual sportCarManual = manualBuilder.getResult();
 
         System.out.println(sportCar);
         System.out.println(sportCarManual);
@@ -37,14 +36,13 @@ public class Main {
         CarBuilder carBuilder = new CarBuilder();
         ManualBuilder manualBuilder = new ManualBuilder();
 
-        Car classicCar = new Car();
-        Manual classicCarManual = new Manual();
+
 
         director.constructClassicCar(carBuilder);
         director.constructClassicCar(manualBuilder);
 
-        classicCar = carBuilder.getResult();
-        classicCarManual = manualBuilder.getResult();
+        Car classicCar = carBuilder.getResult();
+        Manual classicCarManual = manualBuilder.getResult();
 
         System.out.println(classicCar);
         System.out.println(classicCarManual);

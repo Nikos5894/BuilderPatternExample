@@ -1,14 +1,15 @@
 package com.company.cursor.Builder;
 
+import com.company.cursor.CarType;
 import com.company.cursor.Engines.Engine;
 
 public interface Builder {
-    void reset();
+    void setCarType(CarType type);
     void setSeats(int seats);
-    void setEngine(Engine  engine);
+    void setEngine(Engine engine);
     void setModel(String model);
-    void setOnBoardComputer(boolean set);
-    void setTripComputer(boolean set);
-    void setGps(boolean set);
+    void setOnBoardComputer(boolean onBoardComputer);
+    void setTripComputer(boolean tripComputer);
+    void setGPS(boolean gpsNavigator);
 
 }
