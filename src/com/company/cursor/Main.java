@@ -1,24 +1,23 @@
 package com.company.cursor;
 
+import com.company.cursor.Builder.CarBuilder;
+import com.company.cursor.Builder.ManualBuilder;
 import com.company.cursor.Entities.Car;
 import com.company.cursor.Entities.Director;
 import com.company.cursor.Entities.Manual;
-import com.company.cursor.Builder.CarBuilder;
-import com.company.cursor.Builder.ManualBuilder;
 
 public class Main {
 
     public static void main(String[] args) {
-       makeClassicCar();
+        makeClassicCar();
         System.out.println("--------------------------------------------------------------");
-       makeSportCar();
+        makeSportCar();
     }
 
-    public static void makeSportCar(){
+    public static void makeSportCar() {
         Director director = new Director();
         CarBuilder carBuilder = new CarBuilder();
         ManualBuilder manualBuilder = new ManualBuilder();
-
 
 
         director.constructSportCar(carBuilder);
@@ -31,11 +30,10 @@ public class Main {
         System.out.println(sportCarManual);
     }
 
-    public static void makeClassicCar(){
+    public static void makeClassicCar() {
         Director director = new Director();
         CarBuilder carBuilder = new CarBuilder();
         ManualBuilder manualBuilder = new ManualBuilder();
-
 
 
         director.constructClassicCar(carBuilder);

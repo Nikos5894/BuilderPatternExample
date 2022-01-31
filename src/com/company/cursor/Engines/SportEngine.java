@@ -1,7 +1,6 @@
 package com.company.cursor.Engines;
 
 public class SportEngine extends Engine {
-
     private int power;
 
     public SportEngine() {

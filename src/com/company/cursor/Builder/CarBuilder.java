@@ -1,11 +1,10 @@
 package com.company.cursor.Builder;
 
 import com.company.cursor.CarType;
-import com.company.cursor.Entities.Car;
 import com.company.cursor.Engines.Engine;
+import com.company.cursor.Entities.Car;
 
 public class CarBuilder implements Builder {
-
     private CarType type;
     private int seats;
     private Engine engine;
@@ -13,7 +12,6 @@ public class CarBuilder implements Builder {
     private boolean tripComputer;
     private boolean onBoardComputer;
     private boolean gpsNavigator;
-
 
 
     @Override
@@ -38,7 +36,7 @@ public class CarBuilder implements Builder {
 
     @Override
     public void setOnBoardComputer(boolean onBoardComputer) {
-            this.onBoardComputer = onBoardComputer;
+        this.onBoardComputer = onBoardComputer;
     }
 
     @Override
@@ -51,7 +49,7 @@ public class CarBuilder implements Builder {
         this.gpsNavigator = gpsNavigator;
     }
 
-    public Car getResult(){
+    public Car getResult() {
         return new Car(type, seats, engine, model, tripComputer, gpsNavigator, onBoardComputer);
     }
 }

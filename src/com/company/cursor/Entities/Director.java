@@ -7,7 +7,7 @@ import com.company.cursor.Engines.SportEngine;
 
 public class Director {
 
-    public void constructSportCar(Builder builder){
+    public void constructSportCar(Builder builder) {
         builder.setCarType(CarType.SPORTS_CAR);
         builder.setSeats(2);
         builder.setEngine(new SportEngine());
@@ -17,7 +17,7 @@ public class Director {
         builder.setGPS(true);
     }
 
-    public void constructClassicCar(Builder builder){
+    public void constructClassicCar(Builder builder) {
         builder.setCarType(CarType.CLASSIC_CAR);
         builder.setSeats(4);
         builder.setEngine(new ClassicEngine());

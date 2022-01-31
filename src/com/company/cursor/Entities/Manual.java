@@ -57,7 +57,7 @@ public class Manual {
         info += "Engine: " + engine + "\n";
         info += "Model: " + model + "\n";
         info += "Trip Computer: " + tripComputer + "\n";
-        info += "GPS Navigator: " + GPS +"\n";
+        info += "GPS Navigator: " + GPS + "\n";
         return info;
     }
 }

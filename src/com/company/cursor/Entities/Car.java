@@ -3,7 +3,7 @@ package com.company.cursor.Entities;
 import com.company.cursor.CarType;
 import com.company.cursor.Engines.Engine;
 
-public  class Car {
+public class Car {
 
     private final CarType carType;
     private final int seats;

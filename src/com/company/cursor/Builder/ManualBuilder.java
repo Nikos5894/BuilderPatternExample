@@ -1,13 +1,10 @@
 package com.company.cursor.Builder;
 
 import com.company.cursor.CarType;
-import com.company.cursor.Entities.Car;
-import com.company.cursor.Entities.Manual;
 import com.company.cursor.Engines.Engine;
+import com.company.cursor.Entities.Manual;
 
-public class ManualBuilder implements Builder{
-
-
+public class ManualBuilder implements Builder {
     private CarType type;
     private int seats;
     private Engine engine;
@@ -15,7 +12,6 @@ public class ManualBuilder implements Builder{
     private boolean tripComputer;
     private boolean onBoardComputer;
     private boolean gpsNavigator;
-
 
 
     @Override
@@ -53,7 +49,7 @@ public class ManualBuilder implements Builder{
         this.gpsNavigator = gpsNavigator;
     }
 
-    public Manual getResult(){
+    public Manual getResult() {
         return new Manual(type, seats, engine, model, tripComputer, gpsNavigator, onBoardComputer);
     }
 
